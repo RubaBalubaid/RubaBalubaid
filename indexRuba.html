@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="موقع شخصي لعرض المشاريع والمهارات والتواصل مع المطور.">
+  <meta name="keywords"
+    content="ربى, تحليل بيانات, مبرمج, ruba, تطوير مواقع ويب, برمجة مواقع, محلل, مطور, مشاريع, مهارات, تواصل, معرض أعمال">
+
+  <meta name="description" content="الموقع الشخصي لرُبى بلعبيد - مطورة مواقع ومحللة بيانات." />
+  <meta property="og:image" content="img/favicon.png" />
+
+
+  <title>ربى بالبيد | Ruba Balubaid</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styleRuba.css" />
+
+  <!-- JavaScript -->
+  <script defer src="scriptsRuba.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/projects.js" defer></script>
+
+  <!-- email -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- الخط العلوي -->
+  <div class="top-line"></div>
+
+  <header>
+    <div class="container section slide-down">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/Ruba Balubaid logo مع خلفية بيضاء.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <nav id="nav-links">
+        <a href="#about">عني</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">مشاريعي</a>
+        <!-- <a href="#contact">تواصل معي</a> -->
+      </nav>
+
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- قسم عني -->
+    <section id="about" class="section slide-up">
+      <div class="about-container">
+        <div class="about-column about-info">
+          <img src="img/Ruba Balubaid logo.svg" alt="شعاري" class="about-photo"/>
+          <h2 class="about-name">ربـى بـالـبـيـد</h2>
+          <p class="about-specialty">محللة بيانات | مطورة ويب</p>
+        </div>
+        <div class="about-column about-text">
+          <p>
+            مبرمجة مواقع ومحللة بيانات أتمتع بقدرات متميزة في التفكير التحليلي وحل المشكلات. أنفذ المهام بإتقان وأدقق في
+            التفاصيل، أتميز بمهارات عالية في التنظيم وإدارة الوقت، إلى جانب شخصية طموحة تسعى دائمًا للتطور وتحقيق
+            الأهداف بكفاءة واحترافية.
+          </p>
+        </div>
+      </div>
+
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,0 C480,100 960,0 1440,100 L1440,00 L0,0 Z" fill="rgba(3, 170, 223, 0.1)" />
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- <hr class="divider" /> -->
+    <!-- فاصل موجي جمالي -->
+    <!-- <div class="wave-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,0 C480,100 960,0 1440,100 L1440,00 L0,0 Z" fill="#03aadf" />
+    </svg>
+  </div>
+   -->
+
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills-cloud section appear-from-left">
+      <h2 class="section-title">مهاراتي</h2>
+      <div class="word-cloud">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Laravel</span>
+        <span>Figma</span>
+        <span>Data analysis</span>
+        <span>Web development</span>
+        <span>Database Management</span>
+        <span>Git</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>PHP</span>
+        <span>JavaFx</span>
+        <span>MySQL</span>
+        <span>NLP</span>
+        <span>Power Bi</span>
+        <span>++C</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Image Processing</span>
+        <span>Artificial Intelligence</span>
+        <!-- <span></span> -->
+      </div>
+    </section>
+    <!-- فاصل خطي -->
+    <!-- <div class="divider"></div> -->
+
+
+    <section id="projects" class="projects-section section">
+      <h2 class="section-title">مشاريعي</h2>
+      <div class="swiper project-swiper">
+        <div class="swiper-wrapper" id="projects-container">
+          <!-- البطاقات ستُولد من خلال JavaScript -->         
+        </div>
+        <!-- الأسهم -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- <div class="divider"></div>  -->
+    </section>
+
+
+    <!-- <section id="experience" class="timeline-section">
+            <h2 class="section-title">الخبرات</h2>
+            <div class="timeline">
+             
+            </div>
+          </section> -->
+
+    <!-- <section class="timeline">
+            <h2 class="section-title">الخبرات</h2>
+            <div class="timeline-container">
+          
+              <div class="timeline-item right">
+                <div class="timeline-content">
+                  <img src="images/exp1.png" alt="محلل بيانات">
+                  <h3>محلل بيانات</h3>
+                  <span>شركة التقنية الذكية | 2023 - الآن</span>
+                  <p>تحليل بيانات العملاء وتصميم لوحات بيانات تفاعلية.</p>
+                </div>
+              </div>
+          
+              <div class="timeline-item left">
+                <div class="timeline-content">
+                  <img src="images/exp2.png" alt="مطور مواقع">
+                  <h3>مطور مواقع</h3>
+                  <span>Freelancer | 2021 - 2023</span>
+                  <p>بناء مواقع ديناميكية باستخدام Laravel و React.</p>
+                </div>
+              </div>
+          
+              <div class="timeline-item right">
+                <div class="timeline-content">
+                  <img src="images/exp3.png" alt="تدريب تعاوني">
+                  <h3>تدريب تعاوني</h3>
+                  <span>وزارة الاتصالات | 2020</span>
+                  <p>مساعدة في تطوير بوابات إلكترونية.</p>
+                </div>
+              </div>
+          
+            </div>
+          </section> -->
+
+
+    <!-- فاصل خطي -->
+    <!-- <div class="divider"></div> -->
+
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- العمود الأول -->
+        <div class="footer-column">
+          <h3>تواصل معي</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i>RubaBalubaid@outlook.com</li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/RubaBalubaid"
+                target="_blank">RubaBalubaid</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/RubaBalubaid" target="_blank">RubaBalubaid</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- العمود الثاني -->
+        <div class="footer-column">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#skills">مهاراتي</a></li>
+            <li><a href="#projects">مشاريعي</a></li>
+            <li><a href="https://drive.google.com/file/d/1C5SjXrLkB7dt6pourS9hrmf2_St_IMjs/view?usp=sharing">سيرتي الذاتية</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود الثالث -->
+        <div class="footer-column">
+          <h3>أرسل رسالة</h3>
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="hidden" name="time" id="time">
+            <textarea name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+            <button type="submit">إرسال</button>
+            <p id="form-status"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © <span id="year"></span></p>
+      </div>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+
+    </footer>
+
+
+
+  </main>
+
+</body>
+
+</html>
