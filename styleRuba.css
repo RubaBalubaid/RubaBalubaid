@@ -12,48 +12,37 @@ html {
   background-color: #ffffff;
 }
 
-/* .section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
-} */
-
 .section.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
-
-
 .section.show {
   opacity: 1;
 }
 
-.fade-up.show {
+/* .fade-up.show {
   transform: translateY(0);
-}
+} */
 
-/* تأثير الظهور من اليمين */
-.appear-from-right {
-  transform: translateX(50px); /* يتحرك من اليمين */
-}
+/* .appear-from-right {
+  transform: translateX(50px); 
+} */
 
-.appear-from-right.show {
-  transform: translateX(0); /* يرجع إلى موضعه الأصلي */
-}
-
-/* تأثير الظهور من اليسار */
+/* .appear-from-right.show {
+  transform: translateX(0); 
+} */
+/* 
 .appear-from-left {
-  transform: translateX(-50px); /* يتحرك من اليسار */
+  transform: translateX(-50px); 
 }
 
 .appear-from-left.show {
-  transform: translateX(0); /* يرجع إلى موضعه الأصلي */
-}
+  transform: translateX(0); 
+} */
 
 .slide-up {
-  transform: translateY(50px); /* النزول من الأعلى */
+  transform: translateY(50px); 
 }
 .slide-up.show {
   transform: translateY(0);
@@ -75,45 +64,29 @@ html {
 
 /* تقسيم عام للأقسام */
 .section {
-  /* padding: 60px 20px; */
   margin-bottom: 20px;
-  /* margin-top: 35px; */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   will-change: opacity, transform;
 }
 
-/* .section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease;
-} */
-
 .section.animate {
   opacity: 1;
   transform: translateY(0);
 }
 
-
-/* فاصل بين الأقسام */
 .divider {
   border: none;
   height: 2px;
-  /* background: #e0e0e0; */
-  /* margin: 15px 15px; */
-  /* padding: -20px; */
   width: 80%;
 }
 
-/* HEADER */
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-  /* position: sticky; */
   top: 0;
   z-index: 1000;
-  /* margin-bottom: 35px; */
 }
 
 .container {
@@ -125,19 +98,12 @@ header {
   justify-content: space-between;
 }
 
-/* الشعار */
 .logo img {
   width: 80px;
   height: auto;
   border-radius: 50%;
-  /* transition: transform 0.3s ease; */
 }
 
-.logo img:hover {
-  /* transform: scale(1.05); */
-}
-
-/* القائمة */
 nav {
   display: flex;
   gap: 20px;
@@ -154,14 +120,12 @@ nav a:hover {
   color: #03aadf;
 }
 
-/* أيقونة القائمة */
 .menu-icon {
   font-size: 26px;
   cursor: pointer;
   display: none;
 }
 
-/* قسم عني */
 #about .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -169,7 +133,6 @@ nav a:hover {
   gap: 40px;
   max-width: 100%;
   margin: auto;
-  /* margin-top: 35px; */
 }
 
 .about-column {
@@ -225,7 +188,6 @@ nav a:hover {
   max-width: 500px;
 }
 
-/* المهارات */
 .skills-cloud {
   text-align: center;
   margin-top: 75px;
@@ -256,7 +218,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* الجوال */
 @media (max-width: 768px) {
   .container {
     flex-wrap: wrap;
@@ -293,7 +254,6 @@ nav a:hover {
   }
 }
 
-/* حركة الانزلاق للقائمة */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -307,9 +267,6 @@ nav a:hover {
 }
 
 
-/*  الفواصل  */
-
-/* فاصل خطي */
 .divider {
   height: 2px;
   width: 80%;
@@ -318,7 +275,6 @@ nav a:hover {
   border-radius: 2px;
 }
 
-/* ألوان خلفيات متناوبة */
 #about {
   background-color: #f9f9f9;
 }
@@ -327,7 +283,6 @@ nav a:hover {
   background-color: #ffffff;
 }
 
-/* موجة SVG */
 .wave-divider {
   line-height: 0;
   margin-bottom: -5px;
@@ -370,21 +325,12 @@ nav a:hover {
 
 }
 
-/* .project-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  height: 160px;
-  object-fit: cover;
-  margin-bottom: 15px;
-} */
-
 .project-card img {
   width: 100%;
-  height: 110px; /* أو أي ارتفاع ثابت مناسب */
-  object-fit: cover; /* يضمن قص الصورة بشكل أنيق بدون تمدد */
+  height: 110px; 
+  object-fit: cover; 
   border-radius: 8px;
 }
-
 
 .project-card h3 {
   font-size: 20px;
@@ -404,133 +350,12 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* timeline */
-
-
-/* .timeline {
-  position: relative;
-  padding: 60px 20px;
-  background-color: #f5f5f5;
-  direction: rtl;
-}
-
 .section-title {
   text-align: center;
   color: #193e80;
   font-size: 2rem;
   margin-bottom: 40px;
 }
-
-.timeline-container {
-  position: relative;
-  width: 90%;
-  margin: auto;
-  padding: 20px 0;
-}
-
-.timeline-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 50%;
-  width: 4px;
-  background-color: #193e80;
-  transform: translateX(50%);
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 20px 40px;
-  box-sizing: border-box;
-}
-
-.timeline-item.right {
-  right: 0;
-}
-
-.timeline-item.left {
-  left: 0;
-}
-
-.timeline-item .timeline-content {
-  background-color: #fff;
-  padding: 20px;
-  position: relative;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.timeline-item .timeline-content::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  width: 12px;
-  height: 12px;
-  background-color: #193e80;
-  border-radius: 50%;
-  border: 3px solid white;
-  z-index: 1;
-}
-
-.timeline-item.right .timeline-content::before {
-  right: -45px;
-}
-
-.timeline-item.left .timeline-content::before {
-  left: -45px;
-}
-
-.timeline-content img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 2px solid #193e80;
-}
-
-.timeline-content h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #193e80;
-}
-
-.timeline-content span {
-  font-size: 0.9rem;
-  color: #666;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.timeline-content p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #444;
-}
-
-
-@media (max-width: 768px) {
-  .timeline-item,
-  .timeline-item.right,
-  .timeline-item.left {
-    width: 100%;
-    padding: 20px 20px;
-    left: auto;
-    right: auto;
-  }
-
-  .timeline-container::before {
-    right: 20px;
-  }
-
-  .timeline-item .timeline-content::before {
-    right: -25px;
-    left: auto;
-  }
-} */
-
 
 .footer {
   background-color: #193e80;
@@ -557,8 +382,6 @@ nav a:hover {
 .footer-column h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  /* border-bottom: 2px solid #fff; */
-  /* display: inline-block; */
   padding-bottom: 15px;
 }
 

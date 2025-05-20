@@ -45,31 +45,12 @@ const projects = [
     // link: "https://github.com/RubaBalubaid/nebras?tab=readme-ov-file"
     link: "    https://drive.google.com/file/d/11cF_cu8H47IrGWiDeJIOxIiUKwadVNTs/view?usp=sharing"    
   },
-  // {
-  //   title: "إنجازات السعودية التقنية",
-  //   description: " فيديو يعرض إنجازات السعودية التقنية، مصمم بواسطة C++, OpenGL.",
-  //   image: "img/project2.png",
-  //   link: "https://github.com/RubaBalubaid/ComputerGraphicsProject"
-  // },
   {
     title: "SoilStore",
     description: "متجر للنباتات صمم باستخدام HTML, CSS, JS and PHP. ومربوط مع قاعدة بيانات MySQL.",
     image: "soil.png",
     link: "https://github.com/RubaBalubaid/soilStore"
   },
-  // {
-  //   title: "air con...",
-  //   description: "واجهة جذابة تعرض حالة الطقس الحالية.",
-  //   image: "img/project3.png",
-  //   link: "#"
-  // }, 
-  // {
-  //   title: "Eid",
-  //   description: "واجهة جذابة تعرض حالة الطقس الحالية.",
-  //   image: "img/project3.png",
-  //   link: "#"
-  // },
-  // أضف المزيد حسب الحاجة
 ];
 
 const container = document.getElementById("projects-container");
@@ -101,50 +82,6 @@ const swiper = new Swiper('.project-swiper', {
     1024: { slidesPerView: 3 },
   }
 });
-
-// الخبرات
-// const experiences = [
-//   {
-//     title: "محلل بيانات",
-//     organization: "شركة التقنية الذكية",
-//     date: "2023 - الآن",
-//     description: "تحليل بيانات العملاء وتصميم لوحات بيانات تفاعلية.",
-//     image: "images/data.png"
-//   },
-//   {
-//     title: "مطور مواقع",
-//     organization: "Freelancer",
-//     date: "2021 - 2023",
-//     description: "بناء مواقع ديناميكية باستخدام Laravel وReact.",
-//     image: "images/web.png"
-//   },
-//   {
-//     title: "تدريب تعاوني",
-//     organization: "وزارة الاتصالات",
-//     date: "2020",
-//     description: "مساعدة في تطوير بوابات إلكترونية.",
-//     image: "images/intern.png"
-//   }
-// ];
-
-// const timeline = document.querySelector(".timeline");
-
-// experiences.forEach((exp, index) => {
-//   const side = index % 2 === 0 ? 'left' : 'right';
-//   const item = document.createElement("div");
-//   item.className = `timeline-item ${side}`;
-//   item.innerHTML = `
-//     <div class="content">
-//       <img src="${exp.image}" alt="icon">
-//       <h3>${exp.title}</h3>
-//       <div class="org">${exp.organization}</div>
-//       <div class="date">${exp.date}</div>
-//       <p>${exp.description}</p>
-//     </div>
-//   `;
-//   timeline.appendChild(item);
-// });
-
 
 // contact.js
 (function () {
@@ -204,21 +141,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('animate');
-//     } else {
-//       entry.target.classList.remove('animate');
-//     }
-//   });
-// }, {
-//   threshold: 0.1
-// });
-
-// document.querySelectorAll('.section').forEach(sec => {
-//   observer.observe(sec);
-// });
 
 
